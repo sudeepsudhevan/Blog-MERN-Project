@@ -18,6 +18,22 @@ export default function Dashboard() {
             setTab(tabFromUrl);
         }
     }, [location.search]);
+
+    // const urlParams = new URLSearchParams(location.search);
+    // const tabFromUrl = urlParams.get('tab');
+    // if (!tabFromUrl) {
+    //     return (
+    //         <div className='min-h-screen flex flex-col md:flex-row'>
+    //             <div className="md:w-56">
+    //                 {/* sidebar */}
+    //                 <DashSidebar />
+    //             </div>
+    //             {/* dashboard component*/}
+    //             <DashboardComp />
+    //         </div>
+    //     )
+    // }
+
     return (
         <div className='min-h-screen flex flex-col md:flex-row'>
             <div className="md:w-56">
